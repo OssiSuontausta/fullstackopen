@@ -1,1 +1,7 @@
-kaavio 3
+selain-->palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa (lähettää json-muodossa olevan uuden muistiinpanon palvelimelle)
+
+Tällä kertaa lomakkeen tietoja ei lähetetä normaalin lähetysmekanismin avulla, vaan selaimen lataama JavaScript koodi hakee sivuilta lomake-elementin ja rekisteröi sille tapahtumankäsittelijän joka estää lomakkeen lähetyksen oletusarvoisella tavalla.
+Tämän jälkeen koodi luo muistiinpanon, lisää sen listalle ja piirtää listan uudelleen sekä lähettää muistiinpanon palvelimelle.
+
+palvelin-->selain: 201 CREATED (uusi muistiinpano on luotu eikä uudelleenohjauksia tarvita)
+
