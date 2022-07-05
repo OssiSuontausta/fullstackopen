@@ -1,1 +1,10 @@
-kaavio 1
+selain-->palvelin: HTTP POST  https://studies.cs.helsinki.fi/exampleapp/new_note ( lähettää uuden muistiinpanon palvelimelle POST pyynnön mukana, palvelin luo uutta muistiinpanoa vastaavan olion ja lisää sen taulukkoon notes   )
+palvelin-->selain: 302 redirect (palvelin pyytää selainta tekemään automaattisesti uuden HTTP GET pyynnön)
+selain-->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+palvelin-->selain: HTML koodi
+selain-->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+palvelin-->selain: main.css
+selain-->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+palvelin-->selain: main.js
+selain-->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin-->selain: data.json
